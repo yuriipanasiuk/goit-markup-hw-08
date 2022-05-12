@@ -1,0 +1,16 @@
+.social__link--team-link {
+  background-color: team-social-link-bg;
+  color: $team-social-link;
+
+  transition: color 250ms $cubic-bezier, background-color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    background-color: $team-social-link-hover-bg;
+    color: $team-social-hover;
+  }
+}
+
+.social__icon {
+  fill: currentColor;
+}

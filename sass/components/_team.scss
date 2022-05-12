@@ -1,0 +1,48 @@
+.team {
+  background-color: $team-bg-color;
+}
+
+.team__list {
+  display: flex;
+  justify-content: center;
+}
+
+.team__item {
+  background-color: $team-item-color;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.member {
+  padding-top: 30px;
+  margin-bottom: 16px;
+}
+
+.member__name {
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  color: $main-second-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.member__job {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.social-link-wraper {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
