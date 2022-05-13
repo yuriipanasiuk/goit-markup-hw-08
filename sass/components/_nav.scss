@@ -1,15 +1,30 @@
 .nav {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
-.nav__list {
-  display: flex;
-
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
 }
 
-.nav__list--margin {
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    align-items: center;
+
+    &--margin {
+      margin-left: 88px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__list--margin {
+    margin-left: 94px;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -19,8 +34,8 @@
 .nav__link {
   position: relative;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   color: $main-second-color;
 

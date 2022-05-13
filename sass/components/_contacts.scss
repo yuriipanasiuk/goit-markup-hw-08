@@ -1,4 +1,5 @@
 .contacts {
+  display: flex;
   margin-left: auto;
 
   &__link:hover,
@@ -7,13 +8,30 @@
   }
 }
 
-.contacts__list {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .contacts__list {
+    display: none;
+  }
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 30px;
+.contacts__list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+    // margin-bottom: -10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__link {

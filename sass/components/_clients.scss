@@ -1,33 +1,33 @@
-.client__list {
-  display: flex;
-  justify-content: center;
-}
+// .client__list {
+//   // display: flex;
+//   justify-content: center;
+// }
 
-.client__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .client__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
-.client__link {
-  display: inline-flex;
-  width: 170px;
-  height: 92px;
-  align-items: center;
-  justify-content: center;
+// .client__link {
+//   // display: inline-flex;
+//   width: 170px;
+//   height: 92px;
+//   align-items: center;
+//   justify-content: center;
 
-  color: $client-icon-color;
+//   color: $client-icon-color;
 
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   border: 1px solid #afb1b8;
 
-  transition: border-color 250ms $cubic-bezier, color 250ms var(--cubic-bezier);
+//   transition: border-color 250ms $cubic-bezier, color 250ms var(--cubic-bezier);
 
-  &:hover,
-  &:focus {
-    border-color: $client-accent-color;
-    color: $client-accent-color;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     border-color: $client-accent-color;
+//     color: $client-accent-color;
+//   }
+// }
 
-.client__icon {
-  fill: currentColor;
-}
+// .client__icon {
+//   fill: currentColor;
+// }

@@ -1,123 +1,123 @@
-.modal-form {
-  padding: 40px 41px;
-}
+// .modal-form {
+//   padding: 40px 41px;
+// }
 
-.modal-form__title {
-  margin-bottom: 12px;
-  text-align: center;
+// .modal-form__title {
+//   margin-bottom: 12px;
+//   text-align: center;
 
-  color: $form-text-color;
+//   color: $form-text-color;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.64;
-}
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 1.64;
+// }
 
-.label {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 10px;
-  color: #000;
+// .label {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   margin-bottom: 10px;
+//   color: #000;
 
-  transition: color 250ms $cubic-bezier;
-}
+//   transition: color 250ms $cubic-bezier;
+// }
 
-.label:focus-within {
-  color: $accent-color;
-}
+// .label:focus-within {
+//   color: $accent-color;
+// }
 
-.label__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  fill: currentColor;
-}
+// .label__icon {
+//   position: absolute;
+//   top: 50%;
+//   left: 12px;
+//   fill: currentColor;
+// }
 
-.label__name {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: $label-color;
-}
+// .label__name {
+//   margin-bottom: 4px;
+//   font-size: 12px;
+//   line-height: 1.16;
+//   letter-spacing: 0.01em;
+//   color: $label-color;
+// }
 
-.label__input {
-  padding-left: 42px;
-  height: 40px;
-  background-color: #ffffff;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+// .label__input {
+//   padding-left: 42px;
+//   height: 40px;
+//   background-color: #ffffff;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   border-radius: 4px;
 
-  transition: border 250ms $cubic-bezier;
-}
+//   transition: border 250ms $cubic-bezier;
+// }
 
-.label:focus-within > .label__input {
-  outline: none;
-  border: 1px solid $accent-color;
-}
+// .label:focus-within > .label__input {
+//   outline: none;
+//   border: 1px solid $accent-color;
+// }
 
-.textarea__input {
-  height: 120px;
-  padding: 12px 16px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+// .textarea__input {
+//   height: 120px;
+//   padding: 12px 16px;
+//   line-height: 1.14;
+//   letter-spacing: 0.01em;
+//   color: rgba(117, 117, 117, 0.5);
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  resize: none;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   border-radius: 4px;
+//   resize: none;
 
-  &::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-  }
-}
+//   &::placeholder {
+//     color: rgba(117, 117, 117, 0.5);
+//   }
+// }
 
-.textarea {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 20px;
-}
+// .textarea {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   margin-bottom: 20px;
+// }
 
-.textarea__input {
-  transition: border 250ms $cubic-bezier;
-}
+// .textarea__input {
+//   transition: border 250ms $cubic-bezier;
+// }
 
-.textarea:focus-within .textarea__input {
-  outline: none;
-  border: 1px solid $accent-color;
-}
+// .textarea:focus-within .textarea__input {
+//   outline: none;
+//   border: 1px solid $accent-color;
+// }
 
-.modal-form__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+// .modal-form__btn {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 200px;
+//   height: 50px;
+//   margin: 0;
+//   padding: 0;
+//   margin-left: auto;
+//   margin-right: auto;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: $foter-subcribe-btn-text-color;
-  background-color: $foter-subcribe-btn-color;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.88;
+//   letter-spacing: 0.06em;
+//   color: $foter-subcribe-btn-text-color;
+//   background-color: $foter-subcribe-btn-color;
 
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
+//   border-radius: 4px;
+//   border: none;
+//   cursor: pointer;
 
-  transition: background-color 250ms $cubic-bezier,
-    box-shadow 250ms $cubic-bezier;
+//   transition: background-color 250ms $cubic-bezier,
+//     box-shadow 250ms $cubic-bezier;
 
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: #188ce8;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   }
+// }

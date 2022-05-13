@@ -1,44 +1,44 @@
-.social__text {
-  margin-bottom: 20px;
-  padding-top: 12px;
+// .social__text {
+//   margin-bottom: 20px;
+//   padding-top: 12px;
 
-  color: $social-text;
+//   color: $social-text;
 
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
+//   font-weight: 700;
+//   line-height: 1.14;
+//   text-transform: uppercase;
+// }
 
-.social__list {
-  display: flex;
-}
+// .social__list {
+//   display: flex;
+// }
 
-.social__item:not(:last-child) {
-  margin-right: 10px;
-}
+// .social__item:not(:last-child) {
+//   margin-right: 10px;
+// }
 
-.social__link {
-  display: inline-flex;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
+// .social__link {
+//   display: inline-flex;
+//   width: 44px;
+//   height: 44px;
+//   align-items: center;
+//   justify-content: center;
 
-  border-radius: 50%;
-}
+//   border-radius: 50%;
+// }
 
-.social__link--footer {
-  background-color: $footer-bg-social-link;
-  color: $icon-footer-color;
+// .social__link--footer {
+//   background-color: $footer-bg-social-link;
+//   color: $icon-footer-color;
 
-  transition: background-color 250ms $cubic-bezier;
+//   transition: background-color 250ms $cubic-bezier;
 
-  &:hover,
-  &:focus {
-    background-color: $footer-social-link-hover;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: $footer-social-link-hover;
+//   }
+// }
 
-.social__icon {
-  fill: currentColor;
-}
+// .social__icon {
+//   fill: currentColor;
+// }
