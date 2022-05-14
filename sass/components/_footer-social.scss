@@ -1,44 +1,54 @@
-// .social__text {
-//   margin-bottom: 20px;
-//   padding-top: 12px;
+.social {
+}
 
-//   color: $social-text;
+.social__text {
+  margin-bottom: 20px;
 
-//   font-weight: 700;
-//   line-height: 1.14;
-//   text-transform: uppercase;
-// }
+  color: $social-text;
 
-// .social__list {
-//   display: flex;
-// }
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
 
-// .social__item:not(:last-child) {
-//   margin-right: 10px;
-// }
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
+}
 
-// .social__link {
-//   display: inline-flex;
-//   width: 44px;
-//   height: 44px;
-//   align-items: center;
-//   justify-content: center;
+.social__list {
+  display: flex;
 
-//   border-radius: 50%;
-// }
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
+}
 
-// .social__link--footer {
-//   background-color: $footer-bg-social-link;
-//   color: $icon-footer-color;
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
 
-//   transition: background-color 250ms $cubic-bezier;
+.social__link {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
 
-//   &:hover,
-//   &:focus {
-//     background-color: $footer-social-link-hover;
-//   }
-// }
+  border-radius: 50%;
+}
 
-// .social__icon {
-//   fill: currentColor;
-// }
+.social__link--footer {
+  background-color: $footer-bg-social-link;
+  color: $icon-footer-color;
+
+  transition: background-color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    background-color: $footer-social-link-hover;
+  }
+}
+
+.social__icon {
+  fill: currentColor;
+}

@@ -1,10 +1,26 @@
-// .page-footer {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-//   background-color: $footer-bg-color;
-// }
+  background-color: $footer-bg-color;
 
-// .page-footer__wraper {
-//   display: flex;
-// }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.wraper {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.page-footer__wraper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
