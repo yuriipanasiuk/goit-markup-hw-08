@@ -1,7 +1,5 @@
 .example-cards {
   position: relative;
-  height: 294px;
-
   overflow: hidden;
 }
 
@@ -12,10 +10,13 @@
   left: 0;
   top: 0;
   transform: translateY(100%);
-
   background-color: rgba(33, 150, 243, 0.9);
 
   transition: transform 250ms $cubic-bezier;
+
+  @media screen and (max-width: 767px) {
+    top: 1px;
+  }
 }
 
 .example-overlay__text {
@@ -26,7 +27,11 @@
 
   color: $example-overlay-text;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    padding: 77px 24px;
+  }
+
+  @media screen and (min-width: 768px) {
     padding: 49px 24px 77px 24px;
   }
 
@@ -54,11 +59,9 @@
 }
 
 .example__item {
-  //   @media screen and (min-width: 768px) {
-  //     width: calc((100% - 1 * 30px) / 1);
-  //     // margin-left: 30px;
-  //     // margin-top: 30px;
-  //   }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 30px) / 2);
@@ -89,13 +92,3 @@
     transform: translateY(0);
   }
 }
-
-// .example-cards__img {
-//   @media screen and (min-width: 768px) {
-//     width: 354px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     width: 370px;
-//   }
-// }
