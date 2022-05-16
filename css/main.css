@@ -660,7 +660,6 @@ body {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 1600px;
   margin: 0 auto;
   height: 400px;
   text-align: center;
@@ -672,6 +671,21 @@ body {
 
 .hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-image@2x.jpg");
+  }
 }
 
 .hero__title {
@@ -1434,6 +1448,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 4;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
