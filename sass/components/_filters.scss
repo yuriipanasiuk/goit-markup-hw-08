@@ -1,9 +1,8 @@
 .filter-list {
-  margin-bottom: 40px;
-
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
@@ -15,18 +14,21 @@
   }
 }
 
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
-}
-
-@media screen and (max-width: 767px) {
-  .filter-list__item:nth-child(3) {
-    margin-right: 0;
+.filter-list__item {
+  &:not(:last-child) {
+    margin-right: 8px;
   }
-}
 
-.filter-list__item:nth-child(-n + 3) {
-  margin-bottom: 15px;
+  @media screen and (max-width: 389px) {
+    &:nth-child(-n + 2) {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .filter-list__btn {
