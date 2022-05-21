@@ -686,6 +686,7 @@ body.no-scroll {
   padding-bottom: 118px;
   margin: 0 auto;
   text-align: center;
+  max-width: 1600px;
   background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-image480.jpg");
   background-size: cover;
@@ -731,6 +732,18 @@ body.no-scroll {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-image1200@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-image1200.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-image1200@3x.jpg");
   }
 }
 
@@ -1144,6 +1157,14 @@ body.no-scroll {
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
+}
+
+@media screen and (max-width: 320px) {
+  .example-overlay__text {
+    padding: 13px 24px;
+    font-size: 15px;
+    line-height: 1.56;
+  }
 }
 
 @media screen and (min-width: 768px) {

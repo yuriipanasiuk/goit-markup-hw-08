@@ -3,6 +3,7 @@
   padding-bottom: 118px;
   margin: 0 auto;
   text-align: center;
+  max-width: 1600px;
   background-color: $hero-bg-color;
   background-image: $hero-bg-gradient, url("../images/hero-bg-image480.jpg");
   background-size: cover;
@@ -48,6 +49,18 @@
       (min-resolution: 2dppx) {
       background-image: $hero-bg-gradient,
         url("../images/hero-bg-image1200@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: $hero-bg-gradient, url("../images/hero-bg-image1200.jpg");
+
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: $hero-bg-gradient,
+        url("../images/hero-bg-image1200@3x.jpg");
     }
   }
 }

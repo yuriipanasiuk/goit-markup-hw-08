@@ -17,11 +17,16 @@
 
 .example-overlay__text {
   padding: 77px 24px;
-
-  font-size: 18px;
-  line-height: 1.56;
+  @include font(18px, 1.56, null, null);
+  // font-size: 18px;
+  // line-height: 1.56;
 
   color: $example-overlay-text;
+
+  @media screen and (max-width: 320px) {
+    padding: 13px 24px;
+    @include font(15px, 1.56, null, null);
+  }
 
   @include tablet {
     padding: 49px 24px 77px 24px;
