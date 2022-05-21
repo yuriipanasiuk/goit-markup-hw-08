@@ -3,6 +3,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  &.no-scroll {
+    overflow-x: hidden;
+  }
 }
 
 .list {
@@ -12,6 +16,7 @@ body {
 .title {
   margin-bottom: 30px;
   color: $main-second-color;
+
   font-size: 28px;
   line-height: 1.18;
   text-align: center;

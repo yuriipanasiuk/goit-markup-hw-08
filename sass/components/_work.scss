@@ -34,9 +34,7 @@
 }
 
 .working-text__text {
-  font-weight: 700;
-  line-height: 1.14;
-  font-size: 14px;
+  @include font(14px, 1.14, 700, null);
   text-transform: uppercase;
 
   color: $working-text-color;

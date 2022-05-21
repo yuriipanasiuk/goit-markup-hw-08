@@ -9,16 +9,12 @@
 
 .cards__text {
   color: $main-text-color;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(16px, 1.88, null, null);
 }
 
 .cards__title {
   margin-bottom: 4px;
 
   color: $main-second-color;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, 2, 700, 0.06em);
 }

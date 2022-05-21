@@ -37,9 +37,8 @@
 
 .label__name {
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include font(12px, 1.16, null, 0.01em);
+
   color: $label-color;
 }
 
@@ -61,9 +60,9 @@
 .textarea__input {
   height: 120px;
   padding: 12px 16px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+
+  @include font(null, 1.14, null, 0.01em);
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -100,11 +99,8 @@
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  @include font(16px, 1.88, 700, 0.06em);
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   color: $foter-subcribe-btn-text-color;
   background-color: $foter-subcribe-btn-color;
 

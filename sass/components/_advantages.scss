@@ -1,15 +1,15 @@
 .advantages__list {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     margin-right: -30px;
     margin-bottom: -30px;
   }
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: -30px;
   }
 }
@@ -17,17 +17,17 @@
 .advantages__item {
   width: 100%;
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: 450px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 30px;
     margin-bottom: 30px;
     width: calc((100% - 2 * 30px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 4 * 30px) / 4);
     margin-right: 30px;
     margin-bottom: 0;
@@ -56,15 +56,13 @@
   margin-bottom: 10px;
 
   color: $main-second-color;
-  font-size: inherit;
-  line-height: 1.14;
+  @include font(inherit, 1.14, null, null);
   text-transform: uppercase;
-
   @media screen and (max-width: 767px) {
     text-align: center;
   }
 }
 
 .advantages__text {
-  line-height: 1.71;
+  @include font(null, 1.71, null, null);
 }

@@ -15,6 +15,11 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo__header">Studio</span></a
           >
+          <button type="button" class="menu__btn menu-open-btn">
+            <svg width="40" height="40">
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="nav__list nav__list--margin list">
             <li class="nav__item">
               <a
@@ -34,7 +39,7 @@
           </ul>
         </nav>
 
-        <div class="menu" data-menu>
+        <div class="menu">
           <div class="menu-wraper">
             <ul class="menu__list list">
               <li class="menu__item">
@@ -51,6 +56,14 @@
                 <a href="#contacts" class="menu__link">Контакты</a>
               </li>
             </ul>
+            <button type="button" class="menu__btn menu-close-btn">
+              <svg width="40" height="40">
+                <use
+                  class="icon-cross"
+                  href="./images/icons.svg#icon-cross"
+                ></use>
+              </svg>
+            </button>
           </div>
 
           <div class="menu-contacts">
@@ -93,17 +106,6 @@
           </div>
         </div>
 
-        <button
-          data-menu-button
-          type="button"
-          class="nav__btn"
-          aria-label="переключатель меню"
-        >
-          <svg width="40" height="40">
-            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-            <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
-          </svg>
-        </button>
         <div class="contacts">
           <ul class="contacts__list list">
             <li class="contacts__item">
@@ -243,14 +245,35 @@
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/igor-demyanenko.jpg    1x,
-                  ./images/igor-demyanenko@2x.jpg 2x
-                "
-                src="./images/igor-demyanenko.jpg"
-                alt="Игорь Демьяненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor-demyanenko.jpg    1x,
+                    ./images/igor-demyanenko@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor-demyanenko-tab.jpg    1x,
+                    ./images/igor-demyanenko-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor-demyanenko-mob.jpg    1x,
+                    ./images/igor-demyanenko-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/igor-demyanenko-mob@2x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="member">
                 <h3 class="member__name">Игорь Демьяненко</h3>
                 <p lang="en" class="member__job">Product Designer</p>
@@ -295,14 +318,35 @@
             </li>
 
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/olga-repina.jpg    1x,
-                  ./images/olga-repina@2x.jpg 2x
-                "
-                src="./images/olga-repina.jpg"
-                alt="Ольга Репина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga-repina.jpg    1x,
+                    ./images/olga-repina@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-repina-tab.jpg    1x,
+                    ./images/olga-repina-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-repina-mob.jpg    1x,
+                    ./images/olga-repina-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/olga-repina-mob@2x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="member">
                 <h3 class="member__name">Ольга Репина</h3>
                 <p lang="en" class="member__job">Frontend Developer</p>
@@ -347,14 +391,34 @@
             </li>
 
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/nikolay-tarasov.jpg    1x,
-                  ./images/nikolay-tarasov@2x.jpg 2x
-                "
-                src="./images/nikolay-tarasov.jpg"
-                alt="Николай Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/nikolay-tarasov.jpg    1x,
+                    ./images/nikolay-tarasov@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/nikolay-tarasov-tab.jpg    1x,
+                    ./images/nikolay-tarasov-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/nikolay-tarasov-mob.jpg    1x,
+                    ./images/nikolay-tarasov-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/nikolay-tarasov-mob@2x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="member">
                 <h3 class="member__name">Николай Тарасов</h3>
                 <p lang="en" class="member__job">Marketing</p>
@@ -399,14 +463,34 @@
             </li>
 
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/mihail-ermakow.jpg    1x,
-                  ./images/mihail-ermakow@2x.jpg 2x
-                "
-                src="./images/mihail-ermakow.jpg"
-                alt="Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mihail-ermakow.jpg    1x,
+                    ./images/mihail-ermakow@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mihail-ermakow-tab.jpg    1x,
+                    ./images/mihail-ermakow-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mihail-ermakow-mob.jpg    1x,
+                    ./images/mihail-ermakow-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/mihail-ermakow-mob@2x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="member">
                 <h3 class="member__name">Михаил Ермаков</h3>
                 <p lang="en" class="member__job">UI Designer</p>

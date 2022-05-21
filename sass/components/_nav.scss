@@ -9,7 +9,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .nav__list {
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .nav__list--margin {
     margin-left: 94px;
   }
@@ -37,10 +37,7 @@
   padding-bottom: 35px;
 
   color: $main-second-color;
-
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(null, 1.14, 500, 0.02em);
   text-decoration: none;
 
   transition: color 250ms $cubic-bezier;

@@ -3,7 +3,7 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: auto;
   }
 }
@@ -12,18 +12,16 @@
   margin-bottom: 20px;
 
   color: $social-text;
-
-  font-weight: 700;
-  line-height: 1.14;
+  @include font(null, 1.14, 700, null);
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 12px;
   }
 }
 
 .subscribe-wraper {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     align-items: center;
   }
@@ -36,14 +34,13 @@
   padding-left: 16px;
 
   color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(16px, 1.25, null, null);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: 450px;
   }
 
@@ -51,7 +48,7 @@
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 358px;
     margin-right: 12px;
   }
@@ -66,10 +63,7 @@
   margin: 0;
   padding: 0;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font(16px, 1.88, 700, 0.06em);
   color: $foter-subcribe-btn-text-color;
   background-color: $foter-subcribe-btn-color;
 

@@ -5,7 +5,7 @@
 .team__list {
   margin-bottom: -30px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -24,12 +24,12 @@
   @media screen and (max-width: 767px) {
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc(100% / 4 - 30px);
   }
 }
@@ -45,14 +45,11 @@
   text-align: center;
 
   color: $main-second-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 1.19, 500, null);
 }
 
 .member__job {
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 1.19, null, null);
   text-align: center;
 }
 
@@ -61,7 +58,7 @@
   padding-right: 74px;
   padding-bottom: 24px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 30px;

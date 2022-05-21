@@ -7,12 +7,10 @@
 }
 
 .checkbox__text {
-  line-height: 1;
-  font-size: 12px;
+  @include font(12px, 1, null, null);
 
-  @media screen and (min-width: 1200px) {
-    line-height: 1.71;
-    font-size: inherit;
+  @include desktop {
+    @include font(inherit, 1.71, null, null);
   }
 }
 

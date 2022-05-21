@@ -34,7 +34,7 @@
           </ul>
         </nav>
 
-        <div class="menu" data-menu>
+        <div class="menu">
           <div class="menu-wraper">
             <ul class="menu__list list">
               <li class="menu__item">
@@ -51,6 +51,14 @@
                 <a href="#contacts" class="menu__link">Контакты</a>
               </li>
             </ul>
+            <button type="button" class="menu__btn menu-close-btn">
+              <svg width="40" height="40">
+                <use
+                  class="icon-cross"
+                  href="./images/icons.svg#icon-cross"
+                ></use>
+              </svg>
+            </button>
           </div>
 
           <div class="menu-contacts">
@@ -93,15 +101,9 @@
           </div>
         </div>
 
-        <button
-          data-menu-button
-          type="button"
-          class="nav__btn"
-          aria-label="переключатель меню"
-        >
+        <button type="button" class="menu__btn menu-open-btn">
           <svg width="40" height="40">
             <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-            <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
         <div class="contacts">
@@ -159,14 +161,34 @@
               <li class="example__item">
                 <a href="" class="example__link">
                   <div class="example-cards">
-                    <img
-                      srcset="
-                        ./images/portfolio/progect1.jpg    1x,
-                        ./images/portfolio/progect1@2x.jpg 2x
-                      "
-                      src="./images/portfolio/progect1.jpg"
-                      alt="работа технокряк"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/progect1.jpg,
+                          ./images//portfolio/progect1@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect1-tab.jpg,
+                          ./images//portfolio/progect1-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect1-mob.jpg,
+                          ./images//portfolio/progect1-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <img
+                        src="./images/portfolio/progect1-mob@2x.jpg"
+                        alt="Игорь Демьяненко"
+                      />
+                    </picture>
                     <div class="example-overlay">
                       <p class="example-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
@@ -186,14 +208,35 @@
               <li class="example__item">
                 <a href="" class="example__link">
                   <div class="example-cards">
-                    <img
-                      srcset="
-                        ./images/portfolio/progect2.jpg    1x,
-                        ./images/portfolio/progect2@2x.jpg 2x
-                      "
-                      src="./images/portfolio/progect2.jpg"
-                      alt="дизайн постера"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/progect2.jpg,
+                          ./images//portfolio/progect2@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect2-tab.jpg,
+                          ./images//portfolio/progect2-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect2-mob.jpg,
+                          ./images//portfolio/progect2-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <img
+                        src="./images/portfolio/progect2-mob@2x.jpg"
+                        alt="Игорь Демьяненко"
+                      />
+                    </picture>
+
                     <div class="example-overlay">
                       <p class="example-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
@@ -215,14 +258,34 @@
               <li class="example__item">
                 <a href="" class="example__link">
                   <div class="example-cards">
-                    <img
-                      srcset="
-                        ./images/portfolio/progect3.jpg    1x,
-                        ./images/portfolio/progect3@2x.jpg 2x
-                      "
-                      src="./images/portfolio/progect3.jpg"
-                      alt="приложение ресторан"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/progect3.jpg,
+                          ./images//portfolio/progect3@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect3-tab.jpg,
+                          ./images//portfolio/progect3-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect3-mob.jpg,
+                          ./images//portfolio/progect3-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <img
+                        src="./images/portfolio/progect3-mob@2x.jpg"
+                        alt="Игорь Демьяненко"
+                      />
+                    </picture>
                     <div class="example-overlay">
                       <p class="example-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
@@ -244,14 +307,34 @@
               <li class="example__item">
                 <a href="" class="example__link">
                   <div class="example-cards">
-                    <img
-                      srcset="
-                        ./images/portfolio/progect4.jpg    1x,
-                        ./images/portfolio/progect4@2x.jpg 2x
-                      "
-                      src="./images/portfolio/progect4.jpg"
-                      alt="реклама проекта"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/progect4.jpg,
+                          ./images//portfolio/progect4@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect4-tab.jpg,
+                          ./images//portfolio/progect4-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect4-mob.jpg,
+                          ./images//portfolio/progect4-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <img
+                        src="./images/portfolio/progect4-mob@2x.jpg"
+                        alt="Игорь Демьяненко"
+                      />
+                    </picture>
                     <div class="example-overlay">
                       <p class="example-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
@@ -273,14 +356,34 @@
               <li class="example__item">
                 <a href="" class="example__link">
                   <div class="example-cards">
-                    <img
-                      srcset="
-                        ./images/portfolio/progect5.jpg    1x,
-                        ./images/portfolio/progect5@2x.jpg 2x
-                      "
-                      src="./images/portfolio/progect5.jpg"
-                      alt="приложение проекта коробка"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/progect5.jpg,
+                          ./images//portfolio/progect5@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect5-tab.jpg,
+                          ./images//portfolio/progect5-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect5-mob.jpg,
+                          ./images//portfolio/progect5-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <img
+                        src="./images/portfolio/progect5-mob@2x.jpg"
+                        alt="Игорь Демьяненко"
+                      />
+                    </picture>
                     <div class="example-overlay">
                       <p class="example-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
@@ -302,14 +405,34 @@
               <li class="example__item">
                 <a href="" class="example__link">
                   <div class="example-cards">
-                    <img
-                      srcset="
-                        ./images/portfolio/progect6.jpg    1x,
-                        ./images/portfolio/progect6@2x.jpg 2x
-                      "
-                      src="./images/portfolio/progect6.jpg"
-                      alt="название веб сайта"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/progect6.jpg,
+                          ./images//portfolio/progect6@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect6-tab.jpg,
+                          ./images//portfolio/progect6-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect6-mob.jpg,
+                          ./images//portfolio/progect6-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <img
+                        src="./images/portfolio/progect6-mob@2x.jpg"
+                        alt="Игорь Демьяненко"
+                      />
+                    </picture>
                     <div class="example-overlay">
                       <p class="example-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
@@ -331,14 +454,34 @@
               <li class="example__item">
                 <a href="" class="example__link">
                   <div class="example-cards">
-                    <img
-                      srcset="
-                        ./images/portfolio/progect7.jpg    1x,
-                        ./images/portfolio/progect7@2x.jpg 2x
-                      "
-                      src="./images/portfolio/progect7.jpg"
-                      alt="дизайн книги"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/progect7.jpg,
+                          ./images//portfolio/progect7@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect7-tab.jpg,
+                          ./images//portfolio/progect7-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect7-mob.jpg,
+                          ./images//portfolio/progect7-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <img
+                        src="./images/portfolio/progect7-mob@2x.jpg"
+                        alt="Игорь Демьяненко"
+                      />
+                    </picture>
                     <div class="example-overlay">
                       <p class="example-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
@@ -360,14 +503,34 @@
               <li class="example__item">
                 <a href="" class="example__link">
                   <div class="example-cards">
-                    <img
-                      srcset="
-                        ./images/portfolio/progect8.jpg    1x,
-                        ./images/portfolio/progect8@2x.jpg 2x
-                      "
-                      src="./images/portfolio/progect8.jpg"
-                      alt="реклама проекта лаб"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/progect8.jpg,
+                          ./images//portfolio/progect8@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect8-tab.jpg,
+                          ./images//portfolio/progect8-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect8-mob.jpg,
+                          ./images//portfolio/progect8-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <img
+                        src="./images/portfolio/progect8-mob@2x.jpg"
+                        alt="Игорь Демьяненко"
+                      />
+                    </picture>
                     <div class="example-overlay">
                       <p class="example-overlay__text">
                         Ресурс предлагает комплексные предложения с разным
@@ -389,14 +552,34 @@
               <li class="example__item">
                 <a href="" class="example__link">
                   <div class="example-cards">
-                    <img
-                      srcset="
-                        ./images/portfolio/progect9.jpg    1x,
-                        ./images/portfolio/progect9@2x.jpg 2x
-                      "
-                      src="./images/portfolio/progect9.jpg"
-                      alt="приложение для роста бизнеса"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/progect9.jpg,
+                          ./images//portfolio/progect9@2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect9-tab.jpg,
+                          ./images//portfolio/progect9-tab@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/progect9-mob.jpg,
+                          ./images//portfolio/progect9-mob@2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <img
+                        src="./images/portfolio/progect9-mob@2x.jpg"
+                        alt="Игорь Демьяненко"
+                      />
+                    </picture>
                     <div class="example-overlay">
                       <p class="example-overlay__text">
                         Ресурс предлагает комплексные предложения с разным

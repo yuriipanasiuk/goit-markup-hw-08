@@ -4,12 +4,12 @@
 
   margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 30px;
     justify-content: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 50px;
   }
 }
@@ -41,9 +41,7 @@
   background-color: $btn-bg-color;
 
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
+  @include font(16px, 1.63, 500, null);
 
   cursor: pointer;
   border: none;

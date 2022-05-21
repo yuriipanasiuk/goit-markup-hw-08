@@ -8,7 +8,7 @@
     align-items: center;
   }
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     margin-left: -30px;
     flex-wrap: wrap;
   }
@@ -17,18 +17,18 @@
 .client__item {
   margin-top: 30px;
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: calc(100% / 2 - 30px);
 
     margin-left: 30px;
     margin-top: 30px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc(100% / 3 - 30px);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc(100% / 6 - 30px);
     margin-bottom: 0;
   }
@@ -54,11 +54,11 @@
     color: $client-accent-color;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 226px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 170px;
   }
 }
