@@ -1163,15 +1163,13 @@ body.no-scroll {
   .example-overlay__text {
     padding: 13px 24px;
     font-size: 15px;
-    line-height: 1.56;
   }
 }
 
 @media screen and (max-width: 412px) {
   .example-overlay__text {
     padding: 40px 24px;
-    font-size: 15px;
-    line-height: 1.56;
+    font-size: 18px;
   }
 }
 
