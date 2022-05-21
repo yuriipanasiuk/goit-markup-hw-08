@@ -27,6 +27,10 @@
     padding: 13px 24px;
     @include font(15px, 1.56, null, null);
   }
+  @media screen and (max-width: 412px) {
+    padding: 40px 24px;
+    @include font(15px, 1.56, null, null);
+  }
 
   @include tablet {
     padding: 49px 24px 77px 24px;
