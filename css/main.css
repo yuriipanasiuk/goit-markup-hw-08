@@ -335,7 +335,7 @@ body {
 }
 
 body.no-scroll {
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .list {
@@ -360,8 +360,8 @@ body.no-scroll {
 
 .page-header {
   position: relative;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
@@ -472,10 +472,6 @@ body.no-scroll {
 
 .menu__btn {
   display: flex;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  margin: 0;
   padding: 0;
   margin-left: auto;
   color: #000;
@@ -499,16 +495,17 @@ body.no-scroll {
   fill: currentColor;
 }
 
-.icon-cross {
-  position: absolute;
+.menu-wraper {
+  padding: 48px 10px 48px 40px;
 }
 
-.menu-wraper {
-  margin-bottom: 302px;
+.menu__btn--close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .menu {
-  padding: 40px;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
@@ -533,6 +530,10 @@ body.no-scroll {
   .menu {
     display: none;
   }
+}
+
+.menu__list {
+  margin-bottom: 306px;
 }
 
 .menu__link {
@@ -735,13 +736,13 @@ body.no-scroll {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-image1200.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 3), screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-image1200@3x.jpg");
   }
@@ -795,19 +796,13 @@ body.no-scroll {
   .advantages__list {
     display: flex;
     margin-right: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .advantages__list {
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages__list {
-    margin-bottom: -30px;
   }
 }
 
@@ -824,7 +819,7 @@ body.no-scroll {
 @media screen and (min-width: 768px) {
   .advantages__item {
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     width: calc((100% - 2 * 30px) / 2);
   }
 }
@@ -833,7 +828,6 @@ body.no-scroll {
   .advantages__item {
     width: calc((100% - 4 * 30px) / 4);
     margin-right: 30px;
-    margin-bottom: 0;
   }
 }
 
@@ -1127,7 +1121,7 @@ body.no-scroll {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-list__btn:hover, .filter-list__btn:focus {
@@ -1207,7 +1201,7 @@ body.no-scroll {
 }
 
 @media screen and (max-width: 767px) {
-  .example__item {
+  .example__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }

@@ -48,7 +48,7 @@
   border-radius: 4px;
 
   transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier,
-    box-shadow 250ms cubic-bezier;
+    box-shadow 250ms $cubic-bezier;
 
   &:hover,
   &:focus {

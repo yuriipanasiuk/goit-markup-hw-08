@@ -4,11 +4,6 @@
   }
 
   display: flex;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-
-  margin: 0;
   padding: 0;
   margin-left: auto;
 
@@ -28,15 +23,17 @@
   fill: currentColor;
 }
 
-.icon-cross {
-  position: absolute;
-}
 .menu-wraper {
-  margin-bottom: 302px;
+  padding: 48px 10px 48px 40px;
+}
+
+.menu__btn--close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .menu {
-  padding: 40px;
   width: 100vw;
   height: 100vh;
   background-color: $header-bg-color;
@@ -61,6 +58,10 @@
   }
 }
 
+.menu__list {
+  margin-bottom: 306px;
+}
+
 .menu__link {
   text-decoration: none;
   @include font(30px, 1.18, 500, 0.02em);
@@ -83,6 +84,7 @@
 .menu-contacts {
   margin-bottom: 64px;
 }
+
 .menu-contacts__link {
   text-decoration: none;
   color: $main-text-color;
